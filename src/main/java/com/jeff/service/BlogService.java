@@ -1,13 +1,11 @@
 package com.jeff.service;
 
-import com.jeff.mapper.BlogMapper;
-import org.springframework.stereotype.Service;
+import com.jeff.entity.Blog;
 
-import javax.annotation.Resource;
-
+import java.util.List;
 
 public interface BlogService {
 
-
+    List<Blog> getAllBlogs();
 
 }

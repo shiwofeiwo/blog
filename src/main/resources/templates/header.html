@@ -29,18 +29,18 @@
                 <ul class="social-list list-inline py-3 mx-auto">
                     <!-- 个人社交平台链接按钮  -->
                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fab fa-twitter fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="https://stackoverflow.blog/"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
                     <li class="list-inline-item"><a href="https://github.com/shiwofeiwo"><i class="fab fa-github-alt fa-fw"></i></a></li>
                 </ul><!--//social-list-->
                 <hr>
             </div><!--//profile-section-->
 
             <ul class="navbar-nav flex-column text-left">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" th:href="@{index}"><i class="fas fa-home fa-fw mr-2"></i>博客主页 <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-bookmark fa-fw mr-2"></i>还没想好些什么</a>
+                <li class="nav-item" th:if="${user != null}">
+                    <a class="nav-link" href="#"><i class="fas fa-bookmark fa-fw mr-2"></i>发布新文章</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{about}"><i class="fas fa-user fa-fw mr-2"></i>关于我</a>
@@ -48,7 +48,10 @@
             </ul>
 
             <div class="my-2 my-md-3">
-                <a class="btn btn-primary" href="https://github.com/shiwofeiwo" target="_blank">联系我</a>
+                <a class="btn btn-primary" href="https://github.com/shiwofeiwo" target="_blank">欢迎联系我</a>
+            </div>
+            <div class="my-2 my-md-3" th:if="${user != null}">
+                <a class="btn btn-primary" th:href="@{/api/logout}" target="_blank">注  销</a>
             </div>
         </div>
     </nav>
