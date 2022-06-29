@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>header</title>
+</head>
+<body>
+
+<header class="header text-center"  th:fragment="leftSide">
+    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Jeff's Blog</a></h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navigation" class="collapse navbar-collapse flex-column">
+            <div class="profile-section pt-3 pt-lg-0">
+                <!--主页头像-->
+                <img class="profile-image mb-3 rounded-circle mx-auto"
+                     src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2022%2F0617%2Ff99f5ba6j00rdls4v00bcc000hd00efm.jpg&thumbnail=660x2147483647&quality=80&type=jpg" alt="image">
+
+                <div class="bio mb-3">
+                    Hi, my name is Jeff. Briefly introduce yourself here. You can also provide a link to the about page.
+                    <br>
+                    <a href="https://github.com/shiwofeiwo">Find out more about me</a>
+                </div><!--//bio-->
+                <ul class="social-list list-inline py-3 mx-auto">
+                    <!-- 个人社交平台链接按钮  -->
+                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="fab fa-twitter fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/shiwofeiwo"><i class="fab fa-github-alt fa-fw"></i></a></li>
+                </ul><!--//social-list-->
+                <hr>
+            </div><!--//profile-section-->
+
+            <ul class="navbar-nav flex-column text-left">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{index}"><i class="fas fa-home fa-fw mr-2"></i>博客主页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-bookmark fa-fw mr-2"></i>还没想好些什么</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{about}"><i class="fas fa-user fa-fw mr-2"></i>关于我</a>
+                </li>
+            </ul>
+
+            <div class="my-2 my-md-3">
+                <a class="btn btn-primary" href="https://github.com/shiwofeiwo" target="_blank">联系我</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+</body>
+</html>
