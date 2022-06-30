@@ -1315,3 +1315,18 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2022-06-29 16:31:11.089  INFO 10676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-06-29 16:31:11.114  INFO 10676 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2022-06-29 16:31:11.300  INFO 10676 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-29 16:31:48.840  INFO 30508 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 30508 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-06-29 16:31:48.842  INFO 30508 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-06-29 16:31:49.393  INFO 30508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-29 16:31:49.398  INFO 30508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-29 16:31:49.398  INFO 30508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-06-29 16:31:49.447  INFO 30508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-29 16:31:49.447  INFO 30508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 581 ms
+2022-06-29 16:31:49.615  INFO 30508 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-29 16:31:49.753  INFO 30508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-29 16:31:49.760  INFO 30508 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.188 seconds (JVM running for 1.61)
+2022-06-29 16:31:53.524  INFO 30508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-29 16:31:53.524  INFO 30508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-29 16:31:53.525  INFO 30508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-29 16:31:53.551  INFO 30508 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-29 16:31:53.738  INFO 30508 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

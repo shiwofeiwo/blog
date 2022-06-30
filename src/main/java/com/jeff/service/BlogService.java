@@ -8,4 +8,8 @@ public interface BlogService {
 
     List<Blog> getAllBlogs();
 
+    void addBlog(Blog blog);
+
+    Integer getTagIdByTagName(String name);
+
 }

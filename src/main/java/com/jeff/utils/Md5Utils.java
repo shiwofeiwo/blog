@@ -7,8 +7,8 @@ import java.security.MessageDigest;
  * 将明文密码转成MD5密码
  * 123456->e10adc3949ba59abbe56e057f20f883e
  */
-public final class Md5Util {
-    private Md5Util() {
+public final class Md5Utils {
+    private Md5Utils() {
     }
 
     /**
@@ -65,7 +65,7 @@ public final class Md5Util {
      */
     public static void main(String[] args) throws Exception {
         String password = "123456";
-        String passwordMD5 = Md5Util.encodeByMd5(password);
+        String passwordMD5 = Md5Utils.encodeByMd5(password);
         System.out.println(password);
         System.out.println(passwordMD5);
     }

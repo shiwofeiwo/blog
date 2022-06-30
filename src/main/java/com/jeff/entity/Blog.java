@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,7 +17,7 @@ public class Blog {
     private String content; //内容
     private String desc; //简介
     private String picture; //封面图
-    private String create_time; //创建时间
+    private Date create_time; //创建时间
     private Integer isPublished;// 1为所有人可见 0为仅管理员可见
 
 }
