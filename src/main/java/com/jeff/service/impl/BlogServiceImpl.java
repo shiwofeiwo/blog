@@ -33,4 +33,8 @@ public class BlogServiceImpl implements BlogService {
         return tagMapper.getTagIdByName(name);
     }
 
+    @Override
+    public Blog getBlogById(Integer id) {
+        return blogMapper.getBlogById(id);
+    }
 }

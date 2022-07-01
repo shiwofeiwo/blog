@@ -71,8 +71,8 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
         <!-- markdown to html -->
-        <!--markdown to html-->
         <dependency>
             <groupId>com.atlassian.commonmark</groupId>
             <artifactId>commonmark</artifactId>
@@ -88,7 +88,6 @@
             <artifactId>commonmark-ext-gfm-tables</artifactId>
             <version>0.10.0</version>
         </dependency>
-
 
 
         <!--test-->

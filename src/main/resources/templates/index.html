@@ -46,18 +46,18 @@
 				    <div class="media">
 					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" th:src="@{${blog.getPicture()}}" alt="image">
 					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="blog-post.html" th:text="${blog.getTitle()}">Why Every Developer Should Have A Blog</a></h3>
+						    <h3 class="title mb-1"><a th:href="@{/readMore/}+${blog.getId()}" th:text="${blog.getTitle()}">这是文章标题</a></h3>
 						    <div class="meta mb-1">
 									<!--发布日期-->
-									<span class="date" th:text="'创建日期'+${blog.create_time}">Published 2 days ago</span>
+									<span class="date" th:text="'创建日期'+${blog.create_time}">这是发布日期</span>
 									<!--阅读量和评论先不写-->
 									<!--<span class="time">5 min read</span>
 									<span class="comment">
 										<a href="#">8 comments</a>
 									</span>-->
 								</div>
-						    <div class="intro" th:text="${blog.desc}">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-						    <a class="more-link" href="blog-post.html">Read more →</a>
+						    <div class="intro" th:text="${blog.desc}">这是文章描述</div>
+						    <a class="more-link" th:href="@{/readMore/}+${blog.getId()}">Read more →</a>
 					    </div><!--//media-body-->
 				    </div><!--//media-->
 			    </div><!--//item-->

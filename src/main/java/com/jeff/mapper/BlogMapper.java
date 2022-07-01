@@ -17,4 +17,6 @@ public interface BlogMapper {
             "values (#{tag_id},#{title},#{content},#{desc},#{picture},NOW(),#{isPublished})")
     void addBlog(Blog blog);
 
+    @Select("select * from blogs where id = #{id}")
+    Blog getBlogById(Integer id);
 }

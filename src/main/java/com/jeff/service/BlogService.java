@@ -12,4 +12,6 @@ public interface BlogService {
 
     Integer getTagIdByTagName(String name);
 
+    Blog getBlogById(Integer id);
+
 }
