@@ -6,23 +6,26 @@
 </head>
 <body>
 
-<link id="theme-style" rel="stylesheet" th:src="@{/codeBlock/matery.css}">
+<!--代码块样式-->
+<link rel="stylesheet" th:href="@{/css/codeBlock/prism.css}">
+
+
+
 <!-- Javascript -->
 <script th:src="@{/plugins/jquery-3.3.1.min.js}"></script>
 <script th:src="@{/plugins/popper.min.js}"></script>
 <script th:src="@{/plugins/bootstrap/js/bootstrap.min.js}"></script>
-<script th:src="@{/codeBlock/clipboard.min.js}"></script>
-<script th:src="@{/codeBlock/codeBLang.js}"></script>
-<script th:src="@{/codeBlock/codeBlockFuction.js}"></script>
-<script th:src="@{/codeBlock/codeCopy.js}"></script>
-<script th:src="@{/codeBlock/codeShrink.js}"></script>
+<!--代码块样式-->
+<script th:src="@{/js/prism.js}"></script>
+
+
+
 
 <div th:replace="header.html::header"></div>
 <div th:replace="header.html::leftSide"></div>
 
 
-<div style="margin: 300px" class="top" th:utext="${content}"></div>
-
+<div style="margin-left: 300px;margin-right: 100px" class="top" th:utext="${content}"></div>
 
 
 <link rel="stylesheet" th:src="@{/codeBlock/post.ejs}">

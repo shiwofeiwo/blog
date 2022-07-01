@@ -462,3 +462,168 @@
 2022-07-01 16:16:21.139  INFO 28212 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 2022-07-01 16:16:21.165  INFO 28212 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2022-07-01 16:16:21.348  INFO 28212 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:29:16.361  INFO 13836 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 13836 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:29:16.362  INFO 13836 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:29:16.886  INFO 13836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:29:16.891  INFO 13836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:29:16.891  INFO 13836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:29:16.941  INFO 13836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:29:16.941  INFO 13836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 555 ms
+2022-07-01 16:29:17.119  INFO 13836 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:29:17.255  INFO 13836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:29:17.262  INFO 13836 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.208 seconds (JVM running for 1.672)
+2022-07-01 16:29:21.186  INFO 13836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:29:21.186  INFO 13836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:29:21.187  INFO 13836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-01 16:29:21.212  INFO 13836 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:29:21.390  INFO 13836 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:34:11.196  INFO 11916 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 11916 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:34:11.198  INFO 11916 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:34:11.730  INFO 11916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:34:11.735  INFO 11916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:34:11.735  INFO 11916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:34:11.784  INFO 11916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:34:11.784  INFO 11916 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 561 ms
+2022-07-01 16:34:11.959  INFO 11916 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:34:12.096  INFO 11916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:34:12.103  INFO 11916 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.174 seconds (JVM running for 1.65)
+2022-07-01 16:34:15.632  INFO 11916 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:34:15.633  INFO 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:34:15.633  INFO 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-01 16:34:15.659  INFO 11916 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:34:15.838  INFO 11916 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:34:46.019  INFO 932 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 932 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:34:46.021  INFO 932 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:34:46.593  INFO 932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:34:46.598  INFO 932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:34:46.599  INFO 932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:34:46.673  INFO 932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:34:46.674  INFO 932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 625 ms
+2022-07-01 16:34:46.858  INFO 932 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:34:46.994  INFO 932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:34:47.000  INFO 932 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.381 seconds (JVM running for 1.862)
+2022-07-01 16:34:49.042  INFO 932 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:34:49.042  INFO 932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:34:49.043  INFO 932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-01 16:34:49.072  INFO 932 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:34:49.249  INFO 932 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:35:25.457  INFO 16172 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 16172 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:35:25.459  INFO 16172 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:35:26.060  INFO 16172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:35:26.065  INFO 16172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:35:26.065  INFO 16172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:35:26.115  INFO 16172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:35:26.115  INFO 16172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 630 ms
+2022-07-01 16:35:26.291  INFO 16172 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:35:26.443  INFO 16172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:35:26.450  INFO 16172 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.288 seconds (JVM running for 1.72)
+2022-07-01 16:35:29.180  INFO 16172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:35:29.180  INFO 16172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:35:29.181  INFO 16172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-01 16:35:29.208  INFO 16172 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:35:29.388  INFO 16172 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:36:33.098  INFO 33608 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 33608 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:36:33.099  INFO 33608 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:36:33.631  INFO 33608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:36:33.636  INFO 33608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:36:33.636  INFO 33608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:36:33.684  INFO 33608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:36:33.684  INFO 33608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 559 ms
+2022-07-01 16:36:33.859  INFO 33608 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:36:33.997  INFO 33608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:36:34.003  INFO 33608 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.177 seconds (JVM running for 1.63)
+2022-07-01 16:36:35.549  INFO 33608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:36:35.550  INFO 33608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:36:35.550  INFO 33608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-01 16:36:35.576  INFO 33608 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:36:35.752  INFO 33608 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:36:53.651  INFO 7708 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 7708 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:36:53.653  INFO 7708 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:36:54.214  INFO 7708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:36:54.220  INFO 7708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:36:54.220  INFO 7708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:36:54.271  INFO 7708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:36:54.271  INFO 7708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 581 ms
+2022-07-01 16:36:54.445  INFO 7708 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:36:54.586  INFO 7708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:36:54.593  INFO 7708 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.258 seconds (JVM running for 1.762)
+2022-07-01 16:36:58.894  INFO 7708 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:36:58.895  INFO 7708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:36:58.895  INFO 7708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-01 16:36:58.922  INFO 7708 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:36:59.097  INFO 7708 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:39:30.981  INFO 27788 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 27788 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:39:30.983  INFO 27788 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:39:31.503  INFO 27788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:39:31.508  INFO 27788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:39:31.508  INFO 27788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:39:31.558  INFO 27788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:39:31.558  INFO 27788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 547 ms
+2022-07-01 16:39:31.731  INFO 27788 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:39:31.866  INFO 27788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:39:31.872  INFO 27788 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.214 seconds (JVM running for 1.745)
+2022-07-01 16:39:34.363  INFO 27788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:39:34.363  INFO 27788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:39:34.364  INFO 27788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-01 16:39:34.390  INFO 27788 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:39:34.565  INFO 27788 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:41:45.370  INFO 19244 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 19244 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:41:45.372  INFO 19244 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:41:45.910  INFO 19244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:41:45.915  INFO 19244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:41:45.915  INFO 19244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:41:45.966  INFO 19244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:41:45.966  INFO 19244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 567 ms
+2022-07-01 16:41:46.144  INFO 19244 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:41:46.283  INFO 19244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:41:46.289  INFO 19244 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.199 seconds (JVM running for 1.783)
+2022-07-01 16:41:50.545  INFO 19244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:41:50.545  INFO 19244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:41:50.546  INFO 19244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-01 16:41:50.572  INFO 19244 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:41:50.749  INFO 19244 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:42:13.141  INFO 19772 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 19772 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:42:13.142  INFO 19772 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:42:13.688  INFO 19772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:42:13.693  INFO 19772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:42:13.694  INFO 19772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:42:13.747  INFO 19772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:42:13.747  INFO 19772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 581 ms
+2022-07-01 16:42:13.944  INFO 19772 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:42:14.089  INFO 19772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:42:14.096  INFO 19772 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.225 seconds (JVM running for 1.652)
+2022-07-01 16:42:16.302  INFO 19772 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:42:16.302  INFO 19772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:42:16.303  INFO 19772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-01 16:42:16.334  INFO 19772 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:42:16.516  INFO 19772 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:43:59.068  INFO 24832 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 24832 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:43:59.070  INFO 24832 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:43:59.613  INFO 24832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:43:59.618  INFO 24832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:43:59.618  INFO 24832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:43:59.666  INFO 24832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:43:59.666  INFO 24832 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 571 ms
+2022-07-01 16:43:59.842  INFO 24832 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:43:59.981  INFO 24832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:43:59.988  INFO 24832 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.241 seconds (JVM running for 1.704)
+2022-07-01 16:44:02.314  INFO 24832 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:44:02.314  INFO 24832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:44:02.315  INFO 24832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-01 16:44:02.341  INFO 24832 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:44:02.518  INFO 24832 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 16:44:51.520  INFO 31876 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 31876 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-01 16:44:51.521  INFO 31876 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-01 16:44:52.043  INFO 31876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-01 16:44:52.048  INFO 31876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-01 16:44:52.048  INFO 31876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-01 16:44:52.097  INFO 31876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-01 16:44:52.097  INFO 31876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 550 ms
+2022-07-01 16:44:52.271  INFO 31876 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-01 16:44:52.409  INFO 31876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-01 16:44:52.416  INFO 31876 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.183 seconds (JVM running for 1.665)
+2022-07-01 16:44:54.371  INFO 31876 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-01 16:44:54.372  INFO 31876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-01 16:44:54.372  INFO 31876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-01 16:44:54.399  INFO 31876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 16:44:54.573  INFO 31876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
