@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -21,7 +22,8 @@ public class Blog {
     @TableField("`desc`")
     private String desc; //简介
     private String picture; //封面图
-    private Date create_time; //创建时间
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date createTime; //创建时间
     @TableField("is_published")
     private Integer isPublished;// 1为所有人可见 0为仅管理员可见
 

@@ -1,13 +1,14 @@
 package com.jeff;
 
 
-import com.jeff.mapper.BlogMapper;
+import com.jeff.entity.Blog;
 import com.jeff.service.BlogService;
 import com.jeff.utils.Md5Utils;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @SpringBootTest
 class BlogApplicationTests {
@@ -25,6 +26,14 @@ class BlogApplicationTests {
     public void test() {
         Integer hhh = service.getTagIdByTagName("hhh");
         System.out.println(hhh);
+    }
+
+    @Test
+    public void test02() {
+        List<Blog> blogs = service.getAllBlogs();
+        for (Blog blog : blogs) {
+            System.out.println(blog.getCreateTime());
+        }
     }
 
 }
