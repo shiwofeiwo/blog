@@ -1,111 +1,109 @@
 <!DOCTYPE html>
 <!-- suppress ThymeleafVariablesResolveInspection -->
-<html lang="en" xmlns:th="http://www.thymeleaf.org"> 
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Home</title>
-    
+
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog Template">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
     <link rel="shortcut icon" href="../static/favicon.ico">
-    
+
     <!-- FontAwesome JS-->
     <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"></script>
-    
-    <!-- Theme CSS -->  
+
+    <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" th:href="@{/css/theme-2.css}">
 
-</head> 
+</head>
 
 <body>
-    
-		<div th:replace="header.html::leftSide"></div>
-    
-    <div class="main-wrapper">
-	    <section class="cta-section theme-bg-light py-5">
-		    <div class="container text-center">
-			    <h2 class="heading">Jeff's Blog - About everything</h2>
-			    <div class="intro">欢迎来到我的博客,在这里你可以找到你想看的.</div>
-			    <form class="signup-form form-inline justify-content-center pt-3" action="#" method="post">
-                    <div class="form-group">
-                        <label class="sr-only" for="semail">Your email</label>
-                        <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail"
-															 placeholder="请输入你要查询的文章">
-                    </div>
-						<button type="submit" class="btn btn-primary">搜索</button>
-					</form>
-		    </div><!--//container-->
-	    </section>
-	    <section class="blog-list px-3 py-5 p-md-5" th:each="blog : ${blogs}">
-          <!-- 文章内容 -->
-		    <div class="container">
-			    <div class="item mb-5">
-				    <div class="media">
-					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" th:src="@{${blog.getPicture()}}" alt="image">
-					    <div class="media-body">
-						    <h3 class="title mb-1"><a th:href="@{/readMore/}+${blog.getId()}" th:text="${blog.getTitle()}">这是文章标题</a></h3>
-						    <div class="meta mb-1">
-									<!--发布日期-->
-									<span class="date" th:text="'创建日期'+${blog.create_time}">这是发布日期</span>
-									<!--阅读量和评论先不写-->
-									<!--<span class="time">5 min read</span>
-									<span class="comment">
-										<a href="#">8 comments</a>
-									</span>-->
-								</div>
-						    <div class="intro" th:text="${blog.desc}">这是文章描述</div>
-						    <a class="more-link" th:href="@{/readMore/}+${blog.getId()}">Read more →</a>
-					    </div><!--//media-body-->
-				    </div><!--//media-->
-			    </div><!--//item-->
 
-		    </div>
-	    </section>
-        <!--分页按钮-->
-        <nav class="blog-nav nav nav-justified my-5">
-            <a class="nav-link-prev nav-item nav-link rounded-left" href="javascript:void(0)">上一页
-                <i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
-            <a class="nav-link-next nav-item nav-link rounded-right" href="javascript:void(0)">下一页
-                <i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
-        </nav>
+<div th:replace="header.html::leftSide"></div>
 
-    </div><!--//main-wrapper-->
-    
-    
-    
-    
-    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
-    <div id="config-panel" class="config-panel d-none d-lg-block">
-        <div class="panel-inner">
-            <a id="config-trigger" class="config-trigger config-panel-hide text-center" href="#"><i class="fas fa-cog fa-spin mx-auto" data-fa-transform="down-6"></i></a>
-            <h5 class="panel-title">Choose Colour</h5>
-            <ul id="color-options" class="list-inline mb-0">
-                <li class="theme-1 active list-inline-item"><a data-style="assets/css/theme-1.css" href="#"></a></li>
-                <li class="theme-2  list-inline-item"><a data-style="assets/css/theme-2.css" href="#"></a></li>
-                <li class="theme-3  list-inline-item"><a data-style="assets/css/theme-3.css" href="#"></a></li>
-                <li class="theme-4  list-inline-item"><a data-style="assets/css/theme-4.css" href="#"></a></li>
-                <li class="theme-5  list-inline-item"><a data-style="assets/css/theme-5.css" href="#"></a></li>
-                <li class="theme-6  list-inline-item"><a data-style="assets/css/theme-6.css" href="#"></a></li>
-                <li class="theme-7  list-inline-item"><a data-style="assets/css/theme-7.css" href="#"></a></li>
-                <li class="theme-8  list-inline-item"><a data-style="assets/css/theme-8.css" href="#"></a></li>
-            </ul>
-            <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
-        </div><!--//panel-inner-->
-    </div><!--//configure-panel-->
+<div class="main-wrapper">
+    <section class="cta-section theme-bg-light py-5">
+        <div class="container text-center">
+            <h2 class="heading">Jeff's Blog - About everything</h2>
+            <div class="intro">欢迎来到我的博客,在这里你可以找到你想看的.</div>
+            <form class="signup-form form-inline justify-content-center pt-3" th:action="@{/searchByTitle}" method="post">
+                <div class="form-group">
+                    <label class="sr-only" for="semail">Your email</label>
+                    <input type="text" id="semail" name="input-blog" class="form-control mr-md-1 semail"
+                           placeholder="请输入你要查询的文章">
+                </div>
+                <button type="submit" class="btn btn-primary">搜索</button>
+            </form>
+        </div><!--//container-->
+    </section>
+    <section class="blog-list px-3 py-5 p-md-5" th:each="blog : ${blogs}">
+        <!-- 文章内容 -->
+        <div class="container">
+            <div class="item mb-5">
+                <div class="media">
+                    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" th:src="@{${blog.getPicture()}}"
+                         alt="image">
+                    <div class="media-body">
+                        <h3 class="title mb-1"><a th:href="@{/readMore/}+${blog.getId()}" th:text="${blog.getTitle()}">这是文章标题</a>
+                        </h3>
+                        <div class="meta mb-1">
+                            <!--发布日期-->
+                            <span class="date"
+                                  th:text="'创建日期'+${blog.create_time}">这是发布日期
+                                  <!--th:text="${#dates.format(blog.create_time,'yyyy-MM-dd HH:mm:ss')}">这是发布日期-->
+                            </span>
+                        </div>
+                        <div class="intro" th:text="${blog.desc}">这是文章描述</div>
+                        <a class="more-link" th:href="@{/readMore/}+${blog.getId()}">Read more →</a>
+                    </div><!--//media-body-->
+                </div><!--//media-->
+            </div><!--//item-->
 
-    
-       
-    <!-- Javascript -->          
-    <script th:src="@{/plugins/jquery-3.3.1.min.js}"></script>
-    <script th:src="@{/plugins/popper.min.js}"></script>
-    <script th:src="@{/plugins/bootstrap/js/bootstrap.min.js}"></script>
+        </div>
+    </section>
+    <!--分页按钮-->
+    <nav class="blog-nav nav nav-justified my-5">
+        <a class="nav-link-prev nav-item nav-link rounded-left" href="javascript:void(0)">上一页
+            <i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+        <a class="nav-link-next nav-item nav-link rounded-right" href="javascript:void(0)">下一页
+            <i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+    </nav>
 
-    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-    <script th:src="@{/js/demo/style-switcher.js}"></script>
-    
+</div><!--//main-wrapper-->
+
+
+<!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->
+<div id="config-panel" class="config-panel d-none d-lg-block">
+    <div class="panel-inner">
+        <a id="config-trigger" class="config-trigger config-panel-hide text-center" href="#"><i
+                class="fas fa-cog fa-spin mx-auto" data-fa-transform="down-6"></i></a>
+        <h5 class="panel-title">Choose Colour</h5>
+        <ul id="color-options" class="list-inline mb-0">
+            <li class="theme-1 active list-inline-item"><a data-style="assets/css/theme-1.css" href="#"></a></li>
+            <li class="theme-2  list-inline-item"><a data-style="assets/css/theme-2.css" href="#"></a></li>
+            <li class="theme-3  list-inline-item"><a data-style="assets/css/theme-3.css" href="#"></a></li>
+            <li class="theme-4  list-inline-item"><a data-style="assets/css/theme-4.css" href="#"></a></li>
+            <li class="theme-5  list-inline-item"><a data-style="assets/css/theme-5.css" href="#"></a></li>
+            <li class="theme-6  list-inline-item"><a data-style="assets/css/theme-6.css" href="#"></a></li>
+            <li class="theme-7  list-inline-item"><a data-style="assets/css/theme-7.css" href="#"></a></li>
+            <li class="theme-8  list-inline-item"><a data-style="assets/css/theme-8.css" href="#"></a></li>
+        </ul>
+        <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+    </div><!--//panel-inner-->
+</div><!--//configure-panel-->
+
+
+<!-- Javascript -->
+<script th:src="@{/plugins/jquery-3.3.1.min.js}"></script>
+<script th:src="@{/plugins/popper.min.js}"></script>
+<script th:src="@{/plugins/bootstrap/js/bootstrap.min.js}"></script>
+
+<!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+<script th:src="@{/js/demo/style-switcher.js}"></script>
+
 
 </body>
 </html> 

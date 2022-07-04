@@ -1,5 +1,6 @@
 package com.jeff.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.jeff.entity.Blog;
 import com.jeff.mapper.BlogMapper;
 import com.jeff.mapper.TagMapper;
@@ -36,5 +37,12 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Blog getBlogById(Integer id) {
         return blogMapper.getBlogById(id);
+    }
+
+    @Override
+    public List<Blog> getBlogListByFuzzy(String title) {
+        QueryWrapper<Blog> wrapper = new QueryWrapper<>();
+        wrapper.like("title", title);
+        return blogMapper.selectList(wrapper);
     }
 }

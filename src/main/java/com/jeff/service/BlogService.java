@@ -14,4 +14,6 @@ public interface BlogService {
 
     Blog getBlogById(Integer id);
 
+    List<Blog> getBlogListByFuzzy(String title);
+
 }

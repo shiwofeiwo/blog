@@ -1,5 +1,6 @@
 package com.jeff.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.jeff.entity.Blog;
 import com.jeff.entity.User;
 import com.jeff.service.BlogService;
@@ -9,6 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -58,6 +61,7 @@ public class PageController {
         return "blog-add";
     }
 
+    //全文
     @RequestMapping("/readMore/{id}")
     public String readMore(@PathVariable("id") Integer id, Model model) {
         Blog blog = blogService.getBlogById(id);
@@ -67,9 +71,13 @@ public class PageController {
         return "readMore";
     }
 
-    @RequestMapping("/blog-list")
-    public String blogList() {
-        return "blog-list";
+    //模糊查询
+    @RequestMapping(value = "/searchByTitle", method = RequestMethod.POST)
+    public String fuzzyQuery(@RequestParam("input-blog") String title,
+                             Model model) {
+        List<Blog> blogByFuzzyList = blogService.getBlogListByFuzzy(title);
+        model.addAttribute("blogs", blogByFuzzyList);
+        return "/index";
     }
 
     //关于我
