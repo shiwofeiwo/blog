@@ -46,7 +46,7 @@ public class PageController {
         m.addAttribute("user", user);
 
         //获取blog列表,确定页数
-        PageInfo pageInfo = blogService.pageInfo(pn,title);
+        PageInfo pageInfo = blogService.pageInfo(pn, title);
 
         int tmpPage = Math.toIntExact(pageInfo.getTotal() / 5);
         int tmp = Math.toIntExact(pageInfo.getTotal() % 5);
@@ -55,10 +55,10 @@ public class PageController {
         if (tmp != 0) res = tmpPage + 1;
         //第一种情况
         if (pn > res)
-            pageInfo = blogService.pageInfo(res,title);
+            pageInfo = blogService.pageInfo(res, title);
         //第二种情况
         if (pn <= 1)
-            pageInfo = blogService.pageInfo(1,title);
+            pageInfo = blogService.pageInfo(1, title);
         m.addAttribute("pageInfo", pageInfo);
         return "index";
     }
@@ -76,7 +76,10 @@ public class PageController {
 
     //全文
     @RequestMapping("/readMore/{id}")
-    public String readMore(@PathVariable("id") Integer id, Model model) {
+    public String readMore(@PathVariable("id") Integer id,
+                           HttpSession session,
+                           Model model) {
+        model.addAttribute("user", session.getAttribute("user"));
         Blog blog = blogService.getBlogById(id);
         String content = blog.getContent();
         String markdownToHtml = MarkDownUtils.markdownToHtml(content);

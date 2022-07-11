@@ -100,7 +100,7 @@ public class ApiController {
     }
 
     //删除文章
-    @GetMapping(value = "/deleteBlog")
+    @GetMapping(value = "/deleteBlogById")
     public String deleteBlogById(@RequestParam("id") int id) {
         blogService.deleteBlogById(id);
         return "redirect:/";
