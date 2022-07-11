@@ -1,17 +1,14 @@
 package com.jeff.controller;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.jeff.entity.Blog;
+import com.jeff.entity.PageInfo;
 import com.jeff.entity.User;
 import com.jeff.service.BlogService;
 import com.jeff.service.TagService;
 import com.jeff.utils.MarkDownUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -35,7 +32,9 @@ public class PageController {
 
     //跳转主页
     @RequestMapping("/")
-    public String index(Model m, HttpSession session) {
+    public String index(Model m,
+                        HttpSession session,
+                        @RequestParam(value = "pn", required = false, defaultValue = "1") Integer pn) {
         //如果在登录controller中登陆成功会将user存到session中,若此处没有user,说明是游客,那么就不用显示发表文章的标签
         User user = (User) session.getAttribute("user");
         if (user == null) {
@@ -44,9 +43,22 @@ public class PageController {
         }
         //管理员的情况
         m.addAttribute("user", user);
-        //获取blog列表
-        List<Blog> blogs = blogService.getAllBlogs();
-        m.addAttribute("blogs", blogs);
+
+        //获取blog列表,确定页数
+        PageInfo pageInfo = blogService.pageInfo(pn);
+
+        int tmpPage = Math.toIntExact(pageInfo.getTotal() / 5);
+        int tmp = Math.toIntExact(pageInfo.getTotal() % 5);
+        int res = tmpPage;
+
+        if (tmp != 0) res = tmpPage + 1;
+        //第一种情况
+        if (pn > res)
+            pageInfo = blogService.pageInfo(res);
+        //第二种情况
+        if (pn <= 1)
+            pageInfo = blogService.pageInfo(1);
+        m.addAttribute("pageInfo", pageInfo);
         return "index";
     }
 
@@ -76,7 +88,9 @@ public class PageController {
     public String fuzzyQuery(@RequestParam("input-blog") String title,
                              Model model) {
         List<Blog> blogByFuzzyList = blogService.getBlogListByFuzzy(title);
-        model.addAttribute("blogs", blogByFuzzyList);
+        PageInfo pageInfo = new PageInfo();
+        pageInfo.setBlogs(blogByFuzzyList);
+        model.addAttribute("pageInfo", pageInfo);
         return "/index";
     }
 

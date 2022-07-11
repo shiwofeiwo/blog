@@ -1,6 +1,8 @@
 package com.jeff.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,6 +17,7 @@ import java.util.Date;
 @TableName("blogs")
 public class Blog {
 
+    @TableId(value="id",type= IdType.AUTO)
     private Integer id; //ID
     private Integer tag_id; //tag_id
     private String title; //标题

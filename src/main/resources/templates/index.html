@@ -40,7 +40,7 @@
             </form>
         </div><!--//container-->
     </section>
-    <section class="blog-list px-3 py-5 p-md-5" th:each="blog : ${blogs}">
+    <section class="blog-list px-3 py-5 p-md-5" th:each="blog : ${pageInfo.blogs}">
         <!-- 文章内容 -->
         <div class="container">
             <div class="item mb-5">
@@ -58,7 +58,11 @@
                             </span>
                         </div>
                         <div class="intro" th:text="${blog.desc}">这是文章描述</div>
-                        <a class="more-link" th:href="@{/readMore/}+${blog.getId()}">Read more →</a>
+                        <a class="more-link" th:href="@{/readMore/}+${blog.id}">Read more →</a>
+                        <a th:if="${user != null}" style="margin-left: 500px" type="button" class="btn btn-primary"
+                        th:href="@{/api/deleteBlogById?id=}+${blog.getId()}">
+                            删除文章
+                        </a>
                     </div><!--//media-body-->
                 </div><!--//media-->
             </div><!--//item-->
@@ -66,15 +70,14 @@
         </div>
     </section>
     <!--分页按钮-->
-    <nav class="blog-nav nav nav-justified my-5">
-        <a class="nav-link-prev nav-item nav-link rounded-left" href="javascript:void(0)">上一页
-            <i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
-        <a class="nav-link-prev nav-item nav-link" href="javascript:void(0)">1</a>
-        <a class="nav-link-prev nav-item nav-link" href="javascript:void(0)">2</a>
-        <a class="nav-link-prev nav-item nav-link" href="javascript:void(0)">3</a>
-        <a class="nav-link-next nav-item nav-link rounded-right" href="javascript:void(0)">下一页
-            <i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
-    </nav>
+    <div>
+        <nav class="blog-nav nav nav-justified my-5">
+            <a class="nav-link-prev nav-item nav-link rounded-left" th:href="@{/?pn=}+${pageInfo.currentNum-1}">上一页
+                <i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+            <a class="nav-link-next nav-item nav-link rounded-right" th:href="@{/?pn=}+${pageInfo.currentNum+1}">下一页
+                <i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+        </nav>
+    </div>
 
 </div><!--//main-wrapper-->
 

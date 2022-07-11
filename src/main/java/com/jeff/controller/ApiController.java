@@ -6,10 +6,7 @@ import com.jeff.service.BlogService;
 import com.jeff.service.UserService;
 import com.jeff.utils.Md5Utils;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -83,6 +80,7 @@ public class ApiController {
         //把md文件全部都到stringBuffer中
         while ((line = bf.readLine()) != null) {
             sb.append(line);
+            sb.append("\n");
         }
         bf.close();
         //stringBuffer转成String
@@ -98,6 +96,13 @@ public class ApiController {
 
         //tag_id,isPublic合法就执行新增文章
         blogService.addBlog(blog);
+        return "redirect:/";
+    }
+
+    //删除文章
+    @GetMapping(value = "/deleteBlog")
+    public String deleteBlogById(@RequestParam("id") int id) {
+        blogService.deleteBlogById(id);
         return "redirect:/";
     }
 

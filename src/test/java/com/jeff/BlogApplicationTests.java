@@ -1,7 +1,10 @@
 package com.jeff;
 
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jeff.entity.Blog;
+import com.jeff.mapper.BlogMapper;
 import com.jeff.service.BlogService;
 import com.jeff.utils.Md5Utils;
 import org.junit.jupiter.api.Test;
@@ -16,10 +19,13 @@ class BlogApplicationTests {
     @Resource
     private BlogService service;
 
+    @Resource
+    private BlogMapper blogMapper;
+
     @Test
     void contextLoads() throws Exception {
-        //生成密码
-        String s = Md5Utils.encodeByMd5("123456");
+        //生成加密后的密码
+        String s = Md5Utils.encodeByMd5("12627432cba");
         System.out.println(s);
     }
     @Test
@@ -35,5 +41,14 @@ class BlogApplicationTests {
             System.out.println(blog.getCreateTime());
         }
     }
+
+    @Test
+    public void test03() {
+        int res = 1 % 5;
+
+        System.out.println(res);
+    }
+
+
 
 }

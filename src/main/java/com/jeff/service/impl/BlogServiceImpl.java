@@ -1,7 +1,10 @@
 package com.jeff.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jeff.entity.Blog;
+import com.jeff.entity.PageInfo;
 import com.jeff.mapper.BlogMapper;
 import com.jeff.mapper.TagMapper;
 import com.jeff.service.BlogService;
@@ -45,4 +48,22 @@ public class BlogServiceImpl implements BlogService {
         wrapper.like("title", title);
         return blogMapper.selectList(wrapper);
     }
+
+    @Override
+    public void deleteBlogById(int id) {
+        blogMapper.deleteById(id);
+    }
+
+    @Override
+    public PageInfo pageInfo(int currentNum) {
+        QueryWrapper<Object> wrapper = new QueryWrapper<>();
+        Page<Blog> page = new Page<>(currentNum, 5);
+        IPage<Blog> iPage = blogMapper.selectPage(page, null);
+        PageInfo pageInfo = new PageInfo();
+        pageInfo.setCurrentNum(currentNum);
+        pageInfo.setTotal(iPage.getTotal());
+        pageInfo.setBlogs(iPage.getRecords());
+        return pageInfo;
+    }
+
 }
