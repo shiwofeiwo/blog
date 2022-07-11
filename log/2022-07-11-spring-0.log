@@ -635,3 +635,26 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2022-07-11 13:07:01.359  INFO 17564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-07-11 13:07:02.652  INFO 17564 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2022-07-11 13:07:02.834  INFO 17564 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 13:22:00.628  INFO 15024 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 15024 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 13:22:00.629  INFO 15024 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-11 13:22:02.024  INFO 15024 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 13:22:02.328  INFO 15024 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 1.963 seconds (JVM running for 2.556)
+2022-07-11 13:22:02.571  INFO 15024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 13:22:03.035  INFO 15024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 13:22:03.120  INFO 15024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-11 13:22:03.122  INFO 15024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-11 14:17:50.747  INFO 7052 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 7052 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 14:17:50.748  INFO 7052 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "prod"
+2022-07-11 14:17:51.350  INFO 7052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-11 14:17:51.354  INFO 7052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 14:17:51.354  INFO 7052 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 14:17:51.411  INFO 7052 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 14:17:51.411  INFO 7052 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 638 ms
+2022-07-11 14:17:51.956  INFO 7052 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 14:17:52.076  INFO 7052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-11 14:17:52.083  INFO 7052 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.611 seconds (JVM running for 2.077)
+2022-07-11 14:18:12.147  INFO 7052 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 14:18:12.147  INFO 7052 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 14:18:12.147  INFO 7052 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-11 14:18:12.178  INFO 7052 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 14:18:12.356  INFO 7052 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

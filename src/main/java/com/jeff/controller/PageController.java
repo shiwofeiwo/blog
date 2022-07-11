@@ -82,7 +82,7 @@ public class PageController {
         model.addAttribute("user", session.getAttribute("user"));
         Blog blog = blogService.getBlogById(id);
         String content = blog.getContent();
-        String markdownToHtml = MarkDownUtils.markdownToHtml(content);
+        String markdownToHtml = MarkDownUtils.markdownToHtmlExtensions(content);
         model.addAttribute("content", markdownToHtml);
         return "readMore";
     }
