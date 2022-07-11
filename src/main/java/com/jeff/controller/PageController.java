@@ -34,6 +34,7 @@ public class PageController {
     @RequestMapping("/")
     public String index(Model m,
                         HttpSession session,
+                        @RequestParam(value = "input-blog", required = false) String title,
                         @RequestParam(value = "pn", required = false, defaultValue = "1") Integer pn) {
         //如果在登录controller中登陆成功会将user存到session中,若此处没有user,说明是游客,那么就不用显示发表文章的标签
         User user = (User) session.getAttribute("user");
@@ -45,7 +46,7 @@ public class PageController {
         m.addAttribute("user", user);
 
         //获取blog列表,确定页数
-        PageInfo pageInfo = blogService.pageInfo(pn);
+        PageInfo pageInfo = blogService.pageInfo(pn,title);
 
         int tmpPage = Math.toIntExact(pageInfo.getTotal() / 5);
         int tmp = Math.toIntExact(pageInfo.getTotal() % 5);
@@ -54,10 +55,10 @@ public class PageController {
         if (tmp != 0) res = tmpPage + 1;
         //第一种情况
         if (pn > res)
-            pageInfo = blogService.pageInfo(res);
+            pageInfo = blogService.pageInfo(res,title);
         //第二种情况
         if (pn <= 1)
-            pageInfo = blogService.pageInfo(1);
+            pageInfo = blogService.pageInfo(1,title);
         m.addAttribute("pageInfo", pageInfo);
         return "index";
     }

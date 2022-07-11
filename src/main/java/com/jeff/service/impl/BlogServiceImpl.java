@@ -55,10 +55,11 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
-    public PageInfo pageInfo(int currentNum) {
-        QueryWrapper<Object> wrapper = new QueryWrapper<>();
+    public PageInfo pageInfo(int currentNum, String title) {
+        QueryWrapper<Blog> wrapper = new QueryWrapper<>();
+        if (title != null) wrapper.like("title", title);
         Page<Blog> page = new Page<>(currentNum, 5);
-        IPage<Blog> iPage = blogMapper.selectPage(page, null);
+        IPage<Blog> iPage = blogMapper.selectPage(page, wrapper);
         PageInfo pageInfo = new PageInfo();
         pageInfo.setCurrentNum(currentNum);
         pageInfo.setTotal(iPage.getTotal());

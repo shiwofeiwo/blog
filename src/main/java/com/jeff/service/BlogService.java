@@ -19,6 +19,6 @@ public interface BlogService {
 
     void deleteBlogById(int id);
 
-    PageInfo pageInfo(int currentNum);
+    PageInfo pageInfo(int currentNum, String title);
 
 }

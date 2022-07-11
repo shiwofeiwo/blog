@@ -575,3 +575,18 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2022-07-11 11:12:21.303  INFO 14084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 2022-07-11 11:12:21.360  INFO 14084 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2022-07-11 11:12:21.535  INFO 14084 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 12:43:47.349  INFO 11804 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 11804 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 12:43:47.350  INFO 11804 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-11 12:43:47.930  INFO 11804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-11 12:43:47.934  INFO 11804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 12:43:47.935  INFO 11804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 12:43:47.993  INFO 11804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 12:43:47.993  INFO 11804 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 614 ms
+2022-07-11 12:43:48.523  INFO 11804 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 12:43:48.640  INFO 11804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-11 12:43:48.646  INFO 11804 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.574 seconds (JVM running for 2.054)
+2022-07-11 12:43:53.153  INFO 11804 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 12:43:53.154  INFO 11804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 12:43:53.154  INFO 11804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-11 12:43:53.247  INFO 11804 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 12:43:53.434  INFO 11804 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
