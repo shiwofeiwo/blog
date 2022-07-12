@@ -1,0 +1,16 @@
+2022-07-12 13:47:47.765  INFO 21708 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 21708 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-12 13:47:47.766  INFO 21708 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-12 13:47:49.192  INFO 21708 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-12 13:47:49.526  INFO 21708 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 2.033 seconds (JVM running for 2.63)
+2022-07-12 13:47:49.715  INFO 21708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-12 13:47:50.229  INFO 21708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-12 13:47:50.312  INFO 21708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-12 13:47:50.314  INFO 21708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-12 14:23:09.459  INFO 19688 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 19688 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-12 14:23:09.460  INFO 19688 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-12 14:23:10.857  INFO 19688 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-12 14:23:11.205  INFO 19688 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 2.014 seconds (JVM running for 2.612)
+2022-07-12 14:23:11.391  INFO 19688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-12 14:23:11.834  INFO 19688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-12 14:23:11.926  INFO 19688 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-12 14:23:11.928  INFO 19688 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

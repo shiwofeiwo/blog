@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet"  th:href="@{/css/styles.css}">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
 
     <title>Home</title>
 </head>
@@ -34,7 +34,7 @@
 
                 <h1>Admin Login</h1>
 
-                <!-- Loging form -->
+                <!-- Login form -->
                 <form th:action="@{/api/login}" method="post">
                     <div class="form-group">
                         <input name="username" type="text" class="form-control"
@@ -57,7 +57,7 @@
                     <button type="submit" class="btn btn-lg btn-block btn-success">SIGN IN</button>
                 </form>
                 <a type="button" th:href="@{/}" class="btn btn-lg btn-block btn-success">BACK TO HOME</a>
-                <!-- End Loging form -->
+                <!-- End Login form -->
 
             </div>
         </div>

@@ -24,35 +24,45 @@
 	    	    
 	    <article class="about-section py-5">
 		    <div class="container">
-			    <h2 class="title mb-3">关于我</h2>
+			    <h2 class="title mb-3">About Me</h2>
 			    
-			    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. </p>
-			    <figure><img class="img-fluid" th:src="@{/images/about-me.jpg}" alt="image"></figure>
+			    <p>
+						1.热爱学习，对软件设计开发有着强烈的爱好，这种不断的尝试，学习，摸索，突破到最后实现的过程， 让我感到充实和满足，我相信这种热爱会让我在技术方面愈来愈完善。
+					</p>
+					<p>2.积极主动，喜欢思考，工作中有很强的责任感。
+					</p>
+					<p>
+						3.勤奋好学，为人诚恳，有良好的团队合作精神和沟通组织能力。
+					</p>
+			    <figure><img class="img-fluid" th:src="@{/images/about02.jpg}" alt="image"></figure>
 			    <h5 class="mt-5">About The Blog</h5>
-			    <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
+			    <p>
+						此博客为个人练手之作
+					</p>
 			    <h5 class="mt-5">My Skills and Experiences</h5>
-			    <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-			    <h5 class="mt-5">Side Projects</h5>
-			    <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-			    
-			    <figure><a href="#"><img class="img-fluid" th:src="@{/images/promo-banner.jpg}" alt="image"></a></figure>
+					<p>计算机基础知识：</p>
+					<p>		&nbsp;&nbsp;熟悉JAVA，对面向对象思想有一定的理解</p>
+					<p>		&nbsp;&nbsp;熟悉Python，Javascript，Html等语言</p>
+					<p>		&nbsp;&nbsp;熟悉使用办公软件Excel、Word、PPT等文档工具</p>
+					<p>		&nbsp;&nbsp;对计算机视觉有一定了解，会用OpenCV进行图像和视频处理</p>
+					<p>Web/软件开发：</p>
+					<p>		&nbsp;&nbsp;熟悉spring、mybatis、spring MVC、springboot开发框架</p>
+					<p>		&nbsp;&nbsp;熟悉Swagger、mybatis-plus、SpringSecurity框架的使用</p>
+					<p>		&nbsp;&nbsp;熟悉Maven项目构建工具，在linux系统上部署Web项目，使用Git版本控制工具</p>
+					<p>		&nbsp;&nbsp;熟悉MySql的使用，编写SQL语句，实现数据的增、删、改、查，及Druid数据库连接池技术</p>
+					<p>		&nbsp;&nbsp;熟悉python的tkinter模块，编写图形化界面</p>
+					<p>		&nbsp;&nbsp;熟悉使用idea、pycharm编写代码</p>
+					<p></p>
+
+			    <h5 class="mt-5">Projects</h5>
+					<p>基于Python的计算机视觉答题卡识别（本科毕业设计）：</p>
+					<p>项目时间：</p>
+					<p>2022.1-2022.5</p>
+					<p>简介：</p>
+					<p>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于OpenCV和Tkinter来进行一个的带有登录窗口的答题卡识别功能的程序。采用OpenCV库中的函数来对答题卡图像进行去除噪点、滤波、边缘检测、投射变换、图像的轮廓检测、遍历每一行的选项并统计非零像素点、记录填充选项、与正确选项对比来的出总成绩。采用Tkinter来创建了一个简易的登录界面，该登陆界面含有登录和注册两个功能，并使用了windnd.hook_dropfile将答题卡图片文件拖拽到tkinter的登录界面来实现答题卡自动识别并出分的功能。</p>
+			    <img class="img-fluid" th:src="@{/images/about01.jpg}" alt="image">
 		    </div>
 	    </article><!--//about-section-->
-	    
-	    <!--<section class="cta-section theme-bg-light py-5">
-		    <div class="container text-center">
-			    <h2 class="heading">Newsletter</h2>
-			    <div class="intro">Welcome to my blog. Subscribe and get my latest blog post in your inbox.</div>
-			    <form class="signup-form form-inline justify-content-center pt-3">
-                    <div class="form-group">
-                        <label class="sr-only" for="semail">Your email</label>
-                        <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
-		    </div>&lt;!&ndash;//container&ndash;&gt;
-	    </section>-->
-	    
 
     </div><!--//main-wrapper-->
     

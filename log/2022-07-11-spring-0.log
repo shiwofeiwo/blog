@@ -658,3 +658,158 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2022-07-11 14:18:12.147  INFO 7052 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 2022-07-11 14:18:12.178  INFO 7052 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2022-07-11 14:18:12.356  INFO 7052 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 14:19:55.424  INFO 25596 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 25596 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 14:19:55.425  INFO 25596 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-11 14:19:55.990  INFO 25596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-11 14:19:55.995  INFO 25596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 14:19:55.995  INFO 25596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 14:19:56.049  INFO 25596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 14:19:56.049  INFO 25596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 599 ms
+2022-07-11 14:19:56.555  INFO 25596 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 14:19:56.675  INFO 25596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-11 14:19:56.682  INFO 25596 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.531 seconds (JVM running for 2.0)
+2022-07-11 14:20:15.742  INFO 21528 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 21528 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 14:20:15.743  INFO 21528 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-11 14:20:17.211  INFO 21528 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 14:20:17.607  INFO 21528 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 2.136 seconds (JVM running for 2.747)
+2022-07-11 14:20:17.777  INFO 21528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 14:20:18.244  INFO 21528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 14:20:18.331  INFO 21528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-11 14:20:18.333  INFO 21528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-11 15:03:29.790  INFO 26016 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 26016 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 15:03:29.791  INFO 26016 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-11 15:03:31.305  INFO 26016 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 15:03:31.764  INFO 26016 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 2.237 seconds (JVM running for 2.833)
+2022-07-11 15:03:31.958  INFO 26016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 15:03:32.475  INFO 26016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 15:03:32.557  INFO 26016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-11 15:03:32.559  INFO 26016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-11 15:39:14.545  INFO 25232 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 25232 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 15:39:14.546  INFO 25232 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "prod"
+2022-07-11 15:39:15.119  INFO 25232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-11 15:39:15.124  INFO 25232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 15:39:15.124  INFO 25232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 15:39:15.182  INFO 25232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 15:39:15.182  INFO 25232 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 610 ms
+2022-07-11 15:39:15.686  INFO 25232 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 15:39:15.794  WARN 25232 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2022-07-11 15:39:15.796  INFO 25232 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-11 15:39:15.803  INFO 25232 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-11 15:39:15.813 ERROR 25232 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2022-07-11 15:39:35.780  INFO 27344 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 27344 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 15:39:35.781  INFO 27344 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-11 15:39:36.329  INFO 27344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-11 15:39:36.334  INFO 27344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 15:39:36.334  INFO 27344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 15:39:36.389  INFO 27344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 15:39:36.390  INFO 27344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 584 ms
+2022-07-11 15:39:36.911  INFO 27344 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 15:39:37.030  INFO 27344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-11 15:39:37.037  INFO 27344 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.541 seconds (JVM running for 2.028)
+2022-07-11 15:39:46.639  INFO 27344 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 15:39:46.639  INFO 27344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 15:39:46.641  INFO 27344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-11 15:39:46.730  INFO 27344 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 15:39:46.914  INFO 27344 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 15:41:13.202  INFO 24800 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 24800 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 15:41:13.204  INFO 24800 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-11 15:41:13.768  INFO 24800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-11 15:41:13.773  INFO 24800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 15:41:13.774  INFO 24800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 15:41:13.831  INFO 24800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 15:41:13.831  INFO 24800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 600 ms
+2022-07-11 15:41:14.386  INFO 24800 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 15:41:14.497  INFO 24800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-11 15:41:14.504  INFO 24800 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.579 seconds (JVM running for 2.054)
+2022-07-11 15:41:16.178  INFO 24800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 15:41:16.178  INFO 24800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 15:41:16.179  INFO 24800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-11 15:41:23.902  INFO 25340 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 25340 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 15:41:23.903  INFO 25340 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-11 15:41:24.462  INFO 25340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-11 15:41:24.467  INFO 25340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 15:41:24.467  INFO 25340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 15:41:24.523  INFO 25340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 15:41:24.524  INFO 25340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 595 ms
+2022-07-11 15:41:25.038  INFO 25340 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 15:41:25.149  INFO 25340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-11 15:41:25.156  INFO 25340 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.527 seconds (JVM running for 2.005)
+2022-07-11 15:41:27.210  INFO 25340 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 15:41:27.210  INFO 25340 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 15:41:27.211  INFO 25340 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-11 15:42:21.530  INFO 17004 --- [main] com.jeff.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 17004 (D:\work_space\IdeaProjects\Blog\target\classes started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 15:42:21.532  INFO 17004 --- [main] com.jeff.BlogApplication                 : The following 1 profile is active: "dev"
+2022-07-11 15:42:22.132  INFO 17004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-11 15:42:22.138  INFO 17004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 15:42:22.138  INFO 17004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 15:42:22.197  INFO 17004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 15:42:22.197  INFO 17004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 641 ms
+2022-07-11 15:42:22.744  INFO 17004 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 15:42:22.856  INFO 17004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-11 15:42:22.863  INFO 17004 --- [main] com.jeff.BlogApplication                 : Started BlogApplication in 1.611 seconds (JVM running for 2.108)
+2022-07-11 15:42:24.731  INFO 17004 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 15:42:24.731  INFO 17004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 15:42:24.732  INFO 17004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-11 15:43:10.217  INFO 22604 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 22604 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 15:43:10.218  INFO 22604 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-11 15:43:11.677  INFO 22604 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 15:43:12.131  INFO 22604 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 2.188 seconds (JVM running for 2.801)
+2022-07-11 15:43:12.370  INFO 22604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 15:43:12.877  INFO 22604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 15:43:12.968  INFO 22604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-11 15:43:12.969  INFO 22604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-11 16:24:32.556  INFO 23608 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 23608 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 16:24:32.557  INFO 23608 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-11 16:24:33.973  INFO 23608 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 16:24:34.364  INFO 23608 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 2.071 seconds (JVM running for 2.663)
+2022-07-11 16:24:34.549  INFO 23608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 16:24:35.025  INFO 23608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 16:24:35.110  INFO 23608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-11 16:24:35.112  INFO 23608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-11 17:04:20.530  INFO 19512 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 19512 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 17:04:20.531  INFO 19512 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-11 17:04:21.918  INFO 19512 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 17:04:22.264  INFO 19512 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 2.004 seconds (JVM running for 2.593)
+2022-07-11 17:04:22.490  INFO 19512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 17:04:22.951  INFO 19512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 17:04:23.026  INFO 19512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-11 17:04:23.027  INFO 19512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-11 17:08:14.108  INFO 20560 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 20560 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 17:08:14.109  INFO 20560 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-11 17:08:15.499  INFO 20560 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 17:08:15.839  INFO 20560 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 1.997 seconds (JVM running for 2.591)
+2022-07-11 17:08:16.017  INFO 20560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 17:08:16.479  INFO 20560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 17:08:16.556  INFO 20560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-11 17:08:16.558  INFO 20560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-11 17:13:50.807  INFO 24648 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 24648 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 17:13:50.808  INFO 24648 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-11 17:13:52.178  INFO 24648 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 17:13:52.594  INFO 24648 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 2.049 seconds (JVM running for 2.639)
+2022-07-11 17:13:52.811  INFO 24648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 17:13:53.284  INFO 24648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 17:13:53.373  INFO 24648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-11 17:13:53.375  INFO 24648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-11 17:16:46.106  INFO 10840 --- [main] com.jeff.BlogApplicationTests            : Starting BlogApplicationTests using Java 1.8.0_302 on LAPTOP-4UBO5CM2 with PID 10840 (started by Jeff in D:\work_space\IdeaProjects\Blog)
+2022-07-11 17:16:46.107  INFO 10840 --- [main] com.jeff.BlogApplicationTests            : The following 1 profile is active: "prod"
+2022-07-11 17:16:47.499  INFO 10840 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-11 17:16:47.833  INFO 10840 --- [main] com.jeff.BlogApplicationTests            : Started BlogApplicationTests in 1.996 seconds (JVM running for 2.603)
+2022-07-11 17:16:48.002  INFO 10840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 17:16:48.445  INFO 10840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 17:16:48.523  INFO 10840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-11 17:16:48.524  INFO 10840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

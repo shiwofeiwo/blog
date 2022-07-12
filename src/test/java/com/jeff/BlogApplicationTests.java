@@ -1,8 +1,6 @@
 package com.jeff;
 
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jeff.entity.Blog;
 import com.jeff.mapper.BlogMapper;
 import com.jeff.service.BlogService;
@@ -44,9 +42,7 @@ class BlogApplicationTests {
 
     @Test
     public void test03() {
-        int res = 1 % 5;
 
-        System.out.println(res);
     }
 
 

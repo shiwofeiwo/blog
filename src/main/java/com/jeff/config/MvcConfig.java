@@ -9,8 +9,13 @@ public class MvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
+
+        String local = "file:D:\\blog_site\\pictures\\";
+        String server = "file:/www/Projects/pictures/";
+
         registry.addResourceHandler("/blog/pictures/**")
-                .addResourceLocations("file:D:\\blog_site\\pictures\\");
+                //.addResourceLocations(local);//本地映射路径
+                .addResourceLocations(server);//linux服务器文件映射路径
 
     }
 

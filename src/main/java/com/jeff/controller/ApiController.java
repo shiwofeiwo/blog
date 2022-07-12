@@ -67,7 +67,8 @@ public class ApiController {
         //获取图片文件名
         String pictureOriginalFilename = picture.getOriginalFilename();
         //设置文件存储路径
-        File file = new File("D:\\blog_site\\pictures\\" + pictureOriginalFilename);
+        //File file = new File("D:\\blog_site\\pictures\\" + pictureOriginalFilename); //  本地存储路径
+        File file = new File("/www/Projects/pictures/" + pictureOriginalFilename);//linux服务器文件映射路径
         //把文件存到知道的存储路径
         picture.transferTo(file);
         //生成虚拟路径,并将字符串保存到数据库
